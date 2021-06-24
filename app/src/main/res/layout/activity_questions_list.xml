@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.QuestionsListActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/subjectdetals"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:textSize="20dp"
+                android:text="Branch"
+                android:textColor="@color/MainRedColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             android:textSize="20dp"
+                android:text="Subject"
+                android:textColor="@color/MainRedColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subjectdetals"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_questionsList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+        <Button
+            android:id="@+id/btn_add_question"
+            android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/bg_botton2"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_add_red"
+            android:elevation="20dp"
+            android:padding="10dp"
+            android:text="Add Question"
+            android:textColor="@color/MainRedColor" />
+
+        <Button
+            android:id="@+id/btn_done_add_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/bg_botton"
+            android:backgroundTint="@color/MainRedColor"
+            android:elevation="20dp"
+            android:text="Done "
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</layout>

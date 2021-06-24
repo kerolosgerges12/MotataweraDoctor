@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/editQuestionDialog_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/editQuestionDia_btn_cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="5dp"
+                    android:backgroundTint="@color/white"
+                    android:src="@drawable/ic_baseline_close_24"
+                    android:text="Cancle" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_baseline_close_24"
+                    android:text="Edit Question"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/editQuestionDialog_txt_editQuestionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editQuestionDialog_header"
+                android:layout_marginTop="20dp"
+                android:hint="Add Question"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editQuestionDialog_txt_addAnswer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editQuestionDialog_txt_editQuestionTitle"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Add Answer A"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editQuestionDialog_txt_addAnswer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editQuestionDialog_txt_addAnswer1"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Add Answer B"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editQuestionDialog_txt_addAnswer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editQuestionDialog_txt_addAnswer2"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Add Answer C"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editQuestionDialog_txt_addAnswer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editQuestionDialog_txt_addAnswer3"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Add Answer D"
+                android:inputType="textPersonName" />
+
+
+            <RadioGroup
+                android:id="@+id/editQuestionDialog_CorrectanswerRadioGrpup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addQuestionDialog_textview"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="4">
+
+                <RadioButton
+                    android:id="@+id/editQuestionDialog_rb_Answer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/MainRedColor"
+                    android:checked="true"
+                    android:text="A" />
+
+
+                <RadioButton
+                    android:id="@+id/editQuestionDialog_rb_Answer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/MainRedColor"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/editQuestionDialog_rb_Answer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/MainRedColor"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/editQuestionDialog_rb_Answer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/MainRedColor"
+                    android:text="D" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/addQuestionDialog_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editQuestionDialog_txt_addAnswer4"
+                android:layout_marginTop="20dp"
+                android:text="Correct Answer Is "
+                android:textColor="@color/MainRedColor" />
+
+            <Button
+                android:id="@+id/editQuestionDialog_btn_done"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editQuestionDialog_CorrectanswerRadioGrpup"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp"
+                android:background="@drawable/bg_botton"
+                android:backgroundTint="@color/MainRedColor"
+                android:elevation="20dp"
+                android:text="Done"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</layout>

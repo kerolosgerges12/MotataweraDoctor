@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/nav_quiz">
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.kmk.motatawera.doctor.ui.fragment.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_nav_quiz_to_subjectsFragment"
+            app:destination="@id/subjectsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notification"
+        android:name="com.kmk.motatawera.doctor.ui.fragment.NotificationFragment"
+        android:label="Notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.kmk.motatawera.doctor.ui.fragment.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addQuizFragment"
+        android:name="com.kmk.motatawera.doctor.ui.QuestionsListActivity"
+        android:label="fragment_add_quiz"
+        tools:layout="@layout/activity_questions_list" />
+    <fragment
+        android:id="@+id/subjectsFragment"
+        android:name="com.kmk.motatawera.doctor.ui.SubjectsActivity"
+        android:label="fragment_subjects"
+        tools:layout="@layout/activity_subjects" >
+        <action
+            android:id="@+id/action_subjectsFragment_to_addQuizFragment"
+            app:destination="@id/addQuizFragment" />
+    </fragment>
+</navigation>

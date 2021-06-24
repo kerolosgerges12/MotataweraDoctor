@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.auth.RegistrationActivity">
+
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/registration"
+                android:textColor="@color/MainRedColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLayout"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_name_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_baseline_perm_identity_24"
+                app:startIconTint="@color/inputtextbackgroundcolor">
+
+                <EditText
+                    android:id="@+id/et_name_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/inputtextbackgroundcolor"
+                    android:textColorHint="@color/inputtextbackgroundcolor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/ic_email"
+                app:startIconTint="@color/inputtextbackgroundcolor">
+
+                <EditText
+                    android:id="@+id/et_email_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/inputtextbackgroundcolor"
+                    android:textColorHint="@color/inputtextbackgroundcolor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_pass_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/inputtextbackgroundcolor"
+                app:boxStrokeColor="@color/inputtextbackgroundcolor"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/inputtextbackgroundcolor"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:startIconTint="@color/inputtextbackgroundcolor">
+
+                <EditText
+                    android:id="@+id/et_pass_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="@string/password"
+                    android:importantForAutofill="no"
+                    android:inputType="textPassword"
+                    android:textColor="@color/inputtextbackgroundcolor"
+                    android:textColorHint="@color/inputtextbackgroundcolor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_data"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/type"
+            android:textColor="@color/inputtextbackgroundcolor"
+            android:textSize="20sp"
+
+            />
+
+        <RadioGroup
+            android:id="@+id/rg_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:buttonTint="@color/MainRedColor"
+                android:checked="true"
+                android:text="@string/doctor"
+                android:textColor="@color/MainRedColor" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_assistant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/MainRedColor"
+                android:text="@string/assistant"
+                android:textColor="@color/MainRedColor" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_type"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/branch"
+            android:textColor="@color/inputtextbackgroundcolor"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/cb_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_haram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:buttonTint="@color/MainRedColor"
+                android:checked="true"
+                android:text="@string/haram"
+                android:textColor="@color/MainRedColor" />
+
+            <CheckBox
+                android:id="@+id/cb_Qtamia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/MainRedColor"
+                android:text="@string/qtamia"
+                android:textColor="@color/MainRedColor" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/bg_botton"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/MainRedColor" />
+
+    </RelativeLayout>
+</layout>

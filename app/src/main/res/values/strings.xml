@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Motatawera Doctor</string>
+    <string name="title_activity_splash">FullscreenActivity</string>
+    <string name="_2021_kmk_inc">© 2021 KMK Inc.</string>
+
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="logo">logo</string>
+    <string name="password">password</string>
+    <string name="ID">ID</string>
+    <string name="login">Login</string>
+    <string name="registration">Registration</string>
+    <string name="default_notification_channel_id">News</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">logout</string>
+    <string name="Postfragment">Posts</string>
+    <string name="Chatfragment">Chat</string>
+    <string name="Notificationfragment">Notifications</string>
+    <string name="Profilefragment">Profile</string>
+    <string name="Settingfragment">Settings</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
+    <string name="motatwera">Motatwera</string>
+    <string name="_8m">8m</string>
+    <string name="_2020_11_27_5_300_150_2020_11_19">متطورة_الهرم #_ تعلن إدارة المعهد عن تنظيم الحفل السنوى للخريجين وذلك يوم الجمعة الموافق 2020/11/27 الساعة الخامسة مساء بمدرج رقم 5 بالمعهد العالي للدراسات المتطورة بالهرم وقيمة الاشتراك للخريج 300 (ثلاثمائة جنيها) منها 150 (مائة وخمسون جنيها) تآمين ملابس الحفل تسترد بعد الحفل . آخر موعد للتسجيل يوم الخميس الموافق 2020/11/19 يسدد الاشتراك بمكتب رعاية الشباب بالمععد مع تمنياتنا للجميع بالنجاح والتوفيق وكل عام وأنتم بخير إدارة المعهد</string>
+    <string name="_50">50</string>
+    <string name="_20">20</string>
+    <string name="_10">10</string>
+    <string name="motatawera">Motatawera</string>
+    <string name="full_name">Full Name</string>
+    <string name="register">Register</string>
+    <string name="cominicate_with_a_hundred_of_students">Cominicate with a Hundred of Students</string>
+    <string name="can_t_login_reset_password">Can\'t Login Reset Password</string>
+    <string name="makepost">What\'s on your mind?</string>
+    <string name="type">Type :</string>
+    <string name="doctor">Doctor</string>
+    <string name="assistant">Assistant</string>
+    <string name="place">Place :</string>
+    <string name="haram">Haram</string>
+    <string name="qtamia">Qtamia</string>
+    <string name="you_must_select_your_type">You Must Select Your Place </string>
+    <string name="you_must_select_your_place">You Must Select Your branch</string>
+    <string name="branch">Branch:</string>
+    <string name="email">Email</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forget_password">Forget Password</string>
+
+
+</resources>
